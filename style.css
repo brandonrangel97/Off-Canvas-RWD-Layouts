@@ -1,0 +1,136 @@
+/* load local font  */
+@font-face {
+  font-family: "Supreme";
+  src: url(assets/Supreme-Regular.woff2), url(assets/Supreme-Regular.woff);
+}
+
+
+body {
+  /* apply local font */
+	font-family: "Supreme";
+	margin: 0;
+  font-size: 1.5em;
+	line-height: 1.15em; 
+  overflow-x: hidden;
+}
+
+/* Nav Menu */
+nav {
+  background: #1A1A1C;
+  width: 200px;
+  
+  /* position'ing */
+  position: fixed;
+  top: 0;
+ 
+  height: 100vh;
+ 
+  
+  /*  alignment  */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+/* Nav Links */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px 32px 5px 32px;
+}
+
+/* First */
+main {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  min-height: 100vh; 
+  transform: translate( 0px, 0px);
+  transition: transform .25s;
+ 
+}
+
+article {
+  font-size: 1em;
+  color: white;
+  font-family: "Supreme";
+}
+
+main.open {
+  transform: translate( 0, 45px);
+}
+
+.aplant {
+   height: 350px;
+  border-radius: 75px;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+
+}
+.bplant {
+     height: 350px;
+  border-radius: 75px;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.cplant {
+  height: 350px;
+  border-radius: 75px;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+a.toggle-nav {
+  display: block;
+  color: white;
+}
+
+footer {
+  margin-top: 100px;
+}
+/* MEDIA QUERIES mobile */
+@media only screen and (min-width: 0) {
+  main {
+    background: red;
+  }
+  
+  nav {
+    width: 50%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+}
+/**tablet**/
+@media only screen and (min-width: 26em) {
+ main {
+    background: green;
+  }
+  
+
+}
+/** desktop **/
+@media only screen and (min-width: 72em) {
+ main {
+    background: #6F2232;
+  }
+    
+  nav {
+    width: 100vw;
+  }
+  
+  
+}
+
+
+
+
+
+
+
